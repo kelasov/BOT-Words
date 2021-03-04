@@ -1,1 +1,1 @@
-# BOT-Words1
+# BOT-WordsNavalny
