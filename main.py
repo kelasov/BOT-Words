@@ -20,7 +20,7 @@ def write_photo(user_id, message):
     vk.method('messages.send', {'user_id': user_id, 'message': "", "attachment": "photo-203348139_457239021", "random_id": random.randint(1, 12345)})
 
 # API-ключ созданный ранее
-token = "7f01bd30503c6569890e7db68405eda188e37e1ac78225632b62fc07da571e27e3048881ba4fef08a93f8"
+token = "<API-ключ группы>"
 
 # Авторизуемся как сообщество
 vk = vk_api.VkApi(token=token)
