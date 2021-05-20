@@ -28,7 +28,7 @@ def write_klav2(user_id, message):
     vk.method('messages.send', {'user_id': user_id, 'message': "Игровое меню вызвано", "keyboard": keyboard2, "random_id": random.randint(1, 12345)})
 
 # API-ключ созданный ранее
-token = "7f01bd30503c6569890e7db68405eda188e37e1ac78225632b62fc07da571e27e3048881ba4fef08a93f8"
+token = "API-ключ группы vk"
 
 # Авторизуемся как сообщество
 vk = vk_api.VkApi(token=token)
@@ -153,7 +153,6 @@ for event in longpoll.listen():
                 f[users.index(event.user_id)] = 1
             START=0
             INSTR=0
-            print(GAME[users.index(event.user_id)])
 
             if(((event.text).upper()).find("НАЧАТЬ")!= -1 or ((event.text).upper()).find("ЗАПУС") != -1
                         or ((event.text).upper()).find("НАЧАЛО")!= -1
